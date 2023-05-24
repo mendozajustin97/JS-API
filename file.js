@@ -12,7 +12,7 @@ async function clickedEvent(img_info, img_index) {
     ]);
     // let request = new Request(`https://api.artic.edu/api/v1/artworks?fields=${info}`,
 
-    let request = new Request(`https://api.artic.edu/api/v1/artworks/${info}`,
+    let request = new Request(`https://api.artic.edu/api/v1/artworks?fields=${info}`,
     {
         method: 'GET',
         headers : headers
